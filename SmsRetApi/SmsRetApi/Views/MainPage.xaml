@@ -1,23 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:views="clr-namespace:SmsRetApi.Views"
-            x:Class="SmsRetApi.Views.MainPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmsRetApi.Views.MainPage" BackgroundColor="White"
+              Title="Sms Retrieval API for Xamarin">
+    <StackLayout Padding="15" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="White">
+        <Entry  PlaceholderColor="Black" Placeholder="Enter verification code here" x:Name="SmsCodeEntry"></Entry>
+        <Button Text="Wait for sms"  Clicked="ImageButton_OnClicked"></Button>
+        <Label x:Name="TimerLabel" HorizontalTextAlignment="Center"></Label>
+        <StackLayout x:Name="InstructionsStackLayout">
+            <Label>
+                <Label.Text>Now copy the message down there to the emulator send sms feature in phone. 
+Replacing the last line with your specific code
+                </Label.Text>
+            </Label>
+            <Editor>
+                <Editor.Text>
+                    &lt;#&gt; 8994 - Verification Code
+EIlz1XmIgf8
+                </Editor.Text>
+            </Editor>
 
-    <MasterDetailPage.Master>
-        <views:MenuPage />
-    </MasterDetailPage.Master>
+            <Label>
+                <Label.Text>To get your code use bash in windows or linux to run this command replacing &lt; &gt; with your values</Label.Text>
+            </Label>
+            <Editor>
+                <Editor.Text>
+                    ./keytool -alias androiddebugkey -exportcert -keystore &lt;path to key store file =debug.keystore for debugging&gt;  -storepass &lt;for debug = android&gt; -keypass &lt;for debug = android&gt; | xxd -p | tr -d "[:space:]" | echo -n &lt;your package id&gt; `cat` | sha256sum | tr -d "[:space:]-" | xxd -r -p | base64 | cut -c1-11
+                </Editor.Text>
+            </Editor>
 
-    <MasterDetailPage.Detail>
-        <NavigationPage>
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_feed.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>
-            <x:Arguments>
-                <views:ItemsPage />
-            </x:Arguments>
-        </NavigationPage>
-    </MasterDetailPage.Detail>
-</MasterDetailPage>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
