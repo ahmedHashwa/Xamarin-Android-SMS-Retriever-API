@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsRetApi.Android", "SmsRetApi\SmsRetApi.Android\SmsRetApi.Android.csproj", "{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsRetApi", "SmsRetApi\SmsRetApi\SmsRetApi.csproj", "{88AACC4C-1459-46BA-AFC3-CFF45BF711DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24CE3C36-16B9-426D-AA0C-5961ECF8D88C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{88AACC4C-1459-46BA-AFC3-CFF45BF711DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88AACC4C-1459-46BA-AFC3-CFF45BF711DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88AACC4C-1459-46BA-AFC3-CFF45BF711DC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{88AACC4C-1459-46BA-AFC3-CFF45BF711DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88AACC4C-1459-46BA-AFC3-CFF45BF711DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88AACC4C-1459-46BA-AFC3-CFF45BF711DC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D32E4CD5-3F6A-4435-8CFB-5CC9C5D5EFD1}
+	EndGlobalSection
+EndGlobal
